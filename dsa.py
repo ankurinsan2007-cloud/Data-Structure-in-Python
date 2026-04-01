@@ -63,3 +63,14 @@ class Solution:
         
         rev=new_s[::-1]
         return rev==new_s"""
+
+"""selection sort"""
+arr = [8,3,-2,1,0,15,2,6]
+min=0
+for i in range(len(arr)):
+    min=i
+    for j in range(i+1,len(arr)):
+        if arr[j]<arr[min]:
+            min=j
+    arr[i],arr[min]=arr[min],arr[i]
+    print(arr)
